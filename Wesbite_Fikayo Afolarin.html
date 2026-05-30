@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Fikayo Afolarin | Student – Electric Vehicle Portfolio</title>
+  <meta name="description" content="Fikayo Afolarin – Student portfolio focused on electric vehicles, web development, and modern UI/UX design." />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- SEO / Social -->
+  <meta property="og:title" content="EV Portfolio | Electric Mobility Builder" />
+  <meta property="og:description" content="Portfolio focused on electric vehicles: systems, UX, data, and engineering." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Defer JS for performance -->
+  <script defer src="js/main.js"></script>
+  <script defer src="js/portfolio-filter.js"></script>
+  <script defer src="js/form-validation.js"></script>
+  <script defer src="js/api.js"></script>
+</head>
+
+<body class="theme theme--light">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="nav__brand" href="#hero" aria-label="Go to top">
+        <span class="nav__brand-mark" aria-hidden="true">⚡</span>
+        <span class="nav__brand-text">EV Portfolio</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-label="Open menu" aria-controls="navMenu" aria-expanded="false">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+        <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
+        <li class="nav__item"><a class="nav__link" href="#experience">Experience</a></li>
+        <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <span class="btn__icon" aria-hidden="true">🌓</span>
+          <span class="btn__text">Theme</span>
+        </button>
+        <a class="btn btn--primary" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge hero__badge">Electric Mobility • Web • Data</p>
+
+          <h1 class="hero__title">
+			Hi, I'm <span class="text-primary">Fikayo Afolarin</span> —
+			a <span class="text-primary">Student</span> building
+			<span class="hero__typing" id="typingText" aria-label="typing text"></span>
+		  </h1>
+
+          <p class="hero__subtitle">
+            A modern portfolio focused on <strong>electric cars</strong>, charging ecosystems, dashboards, and product experiences.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#portfolio">View Projects</a>
+            <a class="btn btn--secondary" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="hero__meta" role="list" aria-label="Quick stats">
+            <div class="meta-card" role="listitem">
+              <p class="meta-card__value">10+</p>
+              <p class="meta-card__label">EV Projects</p>
+            </div>
+            <div class="meta-card" role="listitem">
+              <p class="meta-card__value">99</p>
+              <p class="meta-card__label">Lighthouse Score</p>
+            </div>
+            <div class="meta-card" role="listitem">
+              <p class="meta-card__value">WCAG</p>
+              <p class="meta-card__label">Accessible UI</p>
+            </div>
+          </div>
+        </div>
+
+        <figure class="hero__visual" aria-label="Electric car featured visual">
+          <img
+            class="hero__image"
+            src="images/portfolio/electricCar1.jpg"
+            alt="Electric car front view in a modern setting"
+            loading="eager"
+            decoding="async"
+          />
+          <figcaption class="sr-only">Electric vehicle showcase image</figcaption>
+        </figure>
+      </div>
+
+      <div class="hero__scroll">
+        <a class="hero__scroll-link" href="#about" aria-label="Scroll to About section">
+          <span class="hero__scroll-mouse" aria-hidden="true"></span>
+          <span class="hero__scroll-text">Scroll</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-label="About">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">About</h2>
+          <p class="section__subtitle">Building digital experiences for the future of transportation.</p>
+        </header>
+
+        <div class="about__grid">
+          <div class="card">
+            <h3 class="card__title">What I do</h3>
+            <p class="card__text">
+				I’m a student interested about electric vehicles and web development. I design and build projects
+				focused on EV technology such as charging station interfaces, battery dashboards, and clean,
+				modern product websites while strengthening my real-world development skills.
+			</p>
+
+
+            <ul class="list list--check" aria-label="Highlights">
+              <li class="list__item">Responsive UI with Grid/Flexbox</li>
+              <li class="list__item">Modern JS (ES6+), modular structure</li>
+              <li class="list__item">Fast load times and SEO-ready pages</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card__title">Currently</h3>
+            <p class="card__text">
+              Exploring EV telemetry visualization, charger uptime monitoring, and designing frictionless onboarding for fleet managers.
+            </p>
+
+            <div class="quote" aria-live="polite">
+              <p class="quote__label">Daily spark (Quote API)</p>
+              <p class="quote__text" id="quoteText">Loading a quote…</p>
+              <p class="quote__meta" id="quoteMeta"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--muted" id="skills" aria-label="Skills">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__subtitle">Core tools I use to ship EV-focused products.</p>
+        </header>
+
+        <div class="skills__grid" aria-label="Skill progress bars">
+          <!-- Each progress animates when visible -->
+          <div class="skill card">
+            <div class="skill__head">
+              <h3 class="skill__title">Front-End (HTML/CSS/JS)</h3>
+              <span class="skill__value">92%</span>
+            </div>
+            <div class="progress" data-progress="92" aria-label="Front-End proficiency">
+              <div class="progress__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+            </div>
+          </div>
+
+          <div class="skill card">
+            <div class="skill__head">
+              <h3 class="skill__title">React / Component Architecture</h3>
+              <span class="skill__value">88%</span>
+            </div>
+            <div class="progress" data-progress="88" aria-label="React proficiency">
+              <div class="progress__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+            </div>
+          </div>
+
+          <div class="skill card">
+            <div class="skill__head">
+              <h3 class="skill__title">APIs / Integration</h3>
+              <span class="skill__value">84%</span>
+            </div>
+            <div class="progress" data-progress="84" aria-label="API proficiency">
+              <div class="progress__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+            </div>
+          </div>
+
+          <div class="skill card">
+            <div class="skill__head">
+              <h3 class="skill__title">Performance / Accessibility</h3>
+              <span class="skill__value">90%</span>
+            </div>
+            <div class="progress" data-progress="90" aria-label="Accessibility proficiency">
+              <div class="progress__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chips" aria-label="Skill tags">
+          <span class="chip">EV UX</span>
+          <span class="chip">Charging Networks</span>
+          <span class="chip">Telemetry Dashboards</span>
+          <span class="chip">CSS Grid</span>
+          <span class="chip">Flexbox</span>
+          <span class="chip">TypeScript-ready</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section" id="portfolio" aria-label="Portfolio">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Portfolio</h2>
+          <p class="section__subtitle">Academic and personal assignments focused on electric vehicles, web development, and UI design.</p>
+
+        </header>
+
+        <div class="portfolio__controls" role="group" aria-label="Portfolio filters">
+          <button class="pill is-active" type="button" data-filter="all">All</button>
+          <button class="pill" type="button" data-filter="ui">UI</button>
+          <button class="pill" type="button" data-filter="data">Data</button>
+          <button class="pill" type="button" data-filter="api">API</button>
+        </div>
+
+        <div class="grid portfolio__grid" id="portfolioGrid" aria-label="Portfolio items">
+          <!-- Item 1 -->
+          <article class="project card" data-category="ui api" tabindex="0"
+            data-title="Assignment: EV Product Landing Page"
+			data-desc="Web development assignment focused on designing a responsive landing page for an electric vehicle. Implemented semantic HTML, BEM-based CSS, sticky navigation, smooth scrolling, dark mode, and accessibility best practices."
+			data-tech="HTML5, CSS3 (BEM), JavaScript"
+
+            data-image="images/portfolio/electricCar1.jpg">
+            <img class="project__img" src="images/portfolio/electricCar1.jpg" alt="EV Landing Page preview" loading="lazy" decoding="async" />
+            <div class="project__body">
+              <h3 class="project__title">EV Landing Page System</h3>
+              <p class="project__text">Fast, responsive, accessible product page.</p>
+              <div class="project__tags" aria-label="Tags">
+                <span class="tag">UI</span><span class="tag">API</span>
+              </div>
+              <button class="btn btn--ghost project__open" type="button">Open</button>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="project card" data-category="data api" tabindex="0"
+            data-title="Assignment: EV Battery Health Dashboard"
+			data-desc="Data-focused assignment exploring how battery health metrics could be visualized for electric vehicles. Designed dashboard layouts to represent charging cycles, efficiency trends, and battery degradation concepts."
+			data-tech="JavaScript, Data Visualization Concepts"
+            data-image="images/portfolio/electricCar2.jpg">
+            <img class="project__img" src="images/portfolio/electricCar2.jpg" alt="Battery dashboard preview" loading="lazy" decoding="async" />
+            <div class="project__body">
+              <h3 class="project__title">Battery Health Dashboard</h3>
+              <p class="project__text">Telemetry-focused views for EV owners & fleets.</p>
+              <div class="project__tags" aria-label="Tags">
+                <span class="tag">Data</span><span class="tag">API</span>
+              </div>
+              <button class="btn btn--ghost project__open" type="button">Open</button>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="project card" data-category="ui" tabindex="0"
+            data-title="Assignment: Charging Station Finder UI"
+			data-desc="UI/UX design assignment focused on creating a mobile-first interface for locating EV charging stations. Emphasized usability, filtering options, and responsive layout using modern CSS techniques."
+			data-tech="UI/UX Design, CSS Grid, Flexbox"
+
+            data-image="images/portfolio/electricCar1.jpg">
+            <img class="project__img" src="images/portfolio/electricCar1.jpg" alt="Charging station finder UI preview" loading="lazy" decoding="async" />
+            <div class="project__body">
+              <h3 class="project__title">Charging Station Finder UI</h3>
+              <p class="project__text">Mobile-first layout with clear filtering patterns.</p>
+              <div class="project__tags" aria-label="Tags">
+                <span class="tag">UI</span>
+              </div>
+              <button class="btn btn--ghost project__open" type="button">Open</button>
+            </div>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="project card" data-category="data" tabindex="0"
+            data-title="Energy Cost Estimator"
+			data-desc="A calculator concept for comparing charging at home vs public stations, including peak/off-peak rates."
+			data-tech="JS, UX"
+
+            data-image="images/portfolio/electricCar2.jpg">
+            <img class="project__img" src="images/portfolio/electricCar2.jpg" alt="Energy cost estimator preview" loading="lazy" decoding="async" />
+            <div class="project__body">
+              <h3 class="project__title">Energy Cost Estimator</h3>
+              <p class="project__text">Clear inputs, instant results, user-friendly.</p>
+              <div class="project__tags" aria-label="Tags">
+                <span class="tag">Data</span>
+              </div>
+              <button class="btn btn--ghost project__open" type="button">Open</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Project details">
+        <div class="modal__overlay" data-modal-close tabindex="-1"></div>
+        <div class="modal__panel" role="document">
+          <button class="modal__close" type="button" aria-label="Close modal" data-modal-close>✕</button>
+          <img class="modal__img" id="modalImg" alt="" loading="lazy" decoding="async" />
+          <div class="modal__content">
+            <h3 class="modal__title" id="modalTitle"></h3>
+            <p class="modal__desc" id="modalDesc"></p>
+            <p class="modal__tech"><strong>Tech:</strong> <span id="modalTech"></span></p>
+            <div class="modal__actions">
+              <a class="btn btn--primary" href="#contact">Work With Me</a>
+              <button class="btn btn--ghost" type="button" data-modal-close>Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--muted" id="experience" aria-label="Experience">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Experience</h2>
+          <p class="section__subtitle">What I’ve built across EV and web products.</p>
+        </header>
+
+        <div class="timeline" aria-label="Experience timeline">
+          <article class="timeline__item card">
+            <h3 class="timeline__title">Student Developer – EV Projects</h3>
+			<p class="timeline__meta">2024 — Present</p>
+
+            <ul class="list">
+              <li class="list__item">Built reusable UI components for EV charging flows and dashboards.</li>
+              <li class="list__item">Improved Core Web Vitals via lazy loading, reduced JS, and semantic HTML.</li>
+              <li class="list__item">Implemented accessibility checks and keyboard navigation patterns.</li>
+            </ul>
+          </article>
+
+          <article class="timeline__item card">
+            <h3 class="timeline__title">Academic & Personal Projects</h3>
+			<p class="timeline__meta">2022 — Present</p>
+
+            <ul class="list">
+              <li class="list__item">Integrated APIs for data-driven features (quotes, GitHub, maps-ready patterns).</li>
+              <li class="list__item">Designed responsive layouts using CSS Grid and Flexbox.</li>
+              <li class="list__item">Created smooth UX: sticky nav, modals, filters, and validation.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education" aria-label="Education">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Education</h2>
+          <p class="section__subtitle">Learning never stops—especially in EV tech.</p>
+        </header>
+
+        <div class="grid grid--two">
+          <article class="card">
+            <h3 class="card__title">Student</h3>
+			<p class="card__text">Currently pursuing Computer Science at SAU</p>
+
+            <p class="muted">Relevant: Data, Systems, Web Development, UI/UX</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Certifications</h3>
+            <ul class="list">
+              <li class="list__item">Web Performance & Accessibility</li>
+              <li class="list__item">JavaScript / React</li>
+              <li class="list__item">Cloud Fundamentals</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--muted" id="contact" aria-label="Contact">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__subtitle">Send a message—I'll respond quickly.</p>
+        </header>
+
+        <div class="grid grid--two contact__grid">
+          <div class="card">
+            <h3 class="card__title">Let’s build something electric ⚡</h3>
+            <p class="card__text">
+              Want a modern landing page for an EV product, a charging dashboard UI, or an API-integrated web app?
+              Send a message and include your goal + timeline.
+            </p>
+
+            <div class="contact__cards" aria-label="Contact methods">
+              <div class="mini">
+                <p class="mini__label">Email</p>
+                <a class="mini__value" href="mailto:afolarinoluwafikayos@sau.edu">afolarinoluwafikayos@sau.edu</a>
+              </div>
+              <div class="mini">
+                <p class="mini__label">Location</p>
+                <p class="mini__value">Chicago, IL</p>
+              </div>
+              <div class="mini">
+                <p class="mini__label">GitHub</p>
+                <a class="mini__value" href="#" id="githubLink" rel="noopener" target="_blank">Set username in api.js</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="card form" id="contactForm" novalidate>
+            <div class="form__row">
+              <label class="form__label" for="name">Name</label>
+              <input class="form__input" id="name" name="name" type="text" autocomplete="name" required />
+              <p class="form__error" id="nameError" aria-live="polite"></p>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input" id="email" name="email" type="email" autocomplete="email" required />
+              <p class="form__error" id="emailError" aria-live="polite"></p>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="message">Message</label>
+              <textarea class="form__input form__input--textarea" id="message" name="message" rows="5" required></textarea>
+              <p class="form__error" id="messageError" aria-live="polite"></p>
+            </div>
+
+            <button class="btn btn--primary form__submit" type="submit">Send Message</button>
+            <p class="form__success" id="formSuccess" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container footer__grid">
+      <p class="footer__copy">
+  © <span id="year"></span> Fikayo Afolarin. Student portfolio focused on electric vehicles and web development.</p>
+      <div class="footer__links" aria-label="Footer links">
+        <a class="footer__link" href="#top">Back to top</a>
+        <a class="footer__link" href="#portfolio">Projects</a>
+        <a class="footer__link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>
